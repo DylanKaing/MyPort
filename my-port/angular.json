@@ -14,8 +14,10 @@
       "prefix": "app",
       "architect": {
         "build": {
-          "builder": "@angular/build:application",
+          "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "baseHref": "/",
+            "outputPath": "dist/my-port",
             "browser": "src/main.ts",
             "tsConfig": "tsconfig.app.json",
             "assets": [
