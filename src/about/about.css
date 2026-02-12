@@ -1,0 +1,235 @@
+* {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* Navigation Bar */
+.navbar {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  font-size: 1.45rem;
+  font-weight: 550;
+  color: #1a1a1a;
+  margin: 0;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+.nav-links a {
+  text-decoration: none;
+  color: #666;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+}
+.nav-links a:hover {
+  color: #0066cc;
+}
+/* Profile Section */
+.profile {
+    background-color: #f8f9fa;
+    padding: 4rem 2rem;
+}
+.profile-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+.profile-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.profile-greeting {
+    font-size: 2.75rem;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin: 0;
+    line-height: 1.15;
+    letter-spacing: -0.01em;
+}
+.highlight {
+    color: #0066cc;
+}
+.profile-subtitle {
+    font-size: 1rem;
+    color: #666;
+    margin: 0;
+    font-weight: 500;
+}
+.profile-description {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+    margin: 0;
+    font-weight: 400;
+}
+.profile-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profile-image img {
+    width: 100%;
+    max-width: 500px;
+    height: 450px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+    object-position: center top;
+    display: block;
+}
+/* Button Group */
+.button-group {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+}
+.btn {
+  padding: 0.65rem 1.25rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.btn-primary {
+  background-color: #0066cc;
+  color: #ffffff;
+}
+.btn-primary:hover {
+  background-color: #0052a3;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 102, 204, 0.3);
+}
+.btn-secondary {
+  background-color: #ffffff;
+  color: #1a1a1a;
+  border: 1px solid #ddd;
+}
+.btn-secondary:hover {
+  background-color: #f5f5f5;
+  border-color: #999;
+}
+.location {
+  font-size: 0.9rem;
+  color: #666;
+  margin: 0;
+  font-weight: 400;
+}
+/* About Section */
+.about-section {
+  background-color: #f8f9fa;
+  padding: 4rem 2rem;
+}
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 3rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+.about-section h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 2rem;
+  margin-top: 0;
+  letter-spacing: -0.01em;
+}
+.about-section p {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #555;
+  margin-bottom: 1.5rem;
+  font-weight: 400;
+}
+.about-section p:last-child {
+  margin-bottom: 0;
+}
+/* Responsive Design */
+@media (max-width: 768px){
+    .profile-container{
+        grid-template-columns: 1fr;
+    }
+    .profile-greeting{
+        font-size: 2.5rem;
+    }
+    .profile-subtitle{
+        font-size: 1rem;
+    }
+    .nav-links{
+        gap: 1rem;
+        font-size: 0.85rem;
+    }
+    .button-group{
+        flex-direction: column;
+    }
+    .btn {
+        width: 100%;
+        justify-content: center;
+    }
+    .profile{
+        padding: 2rem 1rem;
+    }
+    .about-section {
+        padding: 2rem 1rem;
+    }
+    .about-container {
+        padding: 2rem;
+    }
+    .about-section h2 {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+}
+
+@media (max-width: 480px){
+    .profile-greeting {
+        font-size: 2rem;
+    }
+    .profile-subtitle {
+        font-size: 0.95rem;
+    }
+    .nav-links {
+        gap: 0.75rem;
+        font-size: 0.8rem;
+    }
+    .btn {
+        font-size: 0.85rem;
+        padding: 0.6rem 1.2rem;
+    }
+    .about-section h2 {
+        font-size: 1.25rem;
+    }
+}

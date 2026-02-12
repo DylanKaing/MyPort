@@ -1,0 +1,43 @@
+<nav class = "navbar">
+    <div class = "nav-container">
+        <h1 class = "logo">{{ name }}</h1>
+        <ul class = "nav-links">
+            <li><a href = "#about">About</a></li>
+            <li><a href = "#education">Education</a></li>
+            <li><a href = "#projects">Projects</a></li>
+            <li><a href="#resume">Resume</a></li>
+        </ul>
+    </div>
+</nav>
+
+<section class = "profile">
+    <div class = "profile-container">
+        <div class = "profile-content">
+            <h2 class = "profile-greeting">Hello, I'm <span class = "highlight">{{ name }}</span></h2>
+            <p class = "profile-subtitle">{{ role }}</p>
+            <p class = "profile-description">
+                {{ aboutText }}
+            </p>
+
+            <div class = "button-group">
+                <button class = "btn btn-primary"> Contact Me</button>
+                <button class = "btn btn-secondary">LinkedIn</button>
+                <button class = "btn btn-secondary">GitHub</button>
+            </div>
+
+            <p class = "location"> Currently based in {{ location }}</p>
+        </div>
+
+        <div class = "profile-image">
+            <img src = "assets/port2-image.jpeg" alt="Port picture" />
+        </div>
+    </div>
+</section>
+
+<section class = "about-section" id = "about">
+    <div class = "about-container">
+        <h2>About Me</h2>
+        <p>{{ bioText }}</p>
+        <p>{{ specialtiesText }}</p>
+    </div>
+</section>
