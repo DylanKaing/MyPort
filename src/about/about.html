@@ -20,9 +20,15 @@
             </p>
 
             <div class = "button-group">
-                <button class = "btn btn-primary"> Contact Me</button>
-                <button class = "btn btn-secondary">LinkedIn</button>
-                <button class = "btn btn-secondary">GitHub</button>
+                <a [href]="contactLinks[0].href" target="_blank" rel="noopener" class = "btn btn-primary">
+                    {{ contactLinks[0].label }}
+                </a>
+                <a [href]="contactLinks[1].href" target="_blank" rel="noopener" class = "btn btn-secondary">
+                    {{ contactLinks[1].label }}
+                </a>
+                <a [href]="contactLinks[2].href" target="_blank" rel="noopener" class = "btn btn-secondary">
+                    {{ contactLinks[2].label }}
+                </a>
             </div>
 
             <p class = "location"> Currently based in {{ location }}</p>
