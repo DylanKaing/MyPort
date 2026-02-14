@@ -5,8 +5,9 @@ import { CommonModule } from '@angular/common';
     selector: 'education',
     templateUrl: './education.html',
     styleUrls: ['./education.css'],
+    standalone: true,
     imports: [CommonModule]
 })
-export class educationComponent{
+export class EducationComponent{
     
 }

@@ -8,7 +8,7 @@ import { CommonModule } from '@angular/common';
     standalone: true,
     imports: [CommonModule]
 })
-export class aboutComponent{
+export class AboutComponent{
     name = 'Dylan Kaing';
     role = 'Software Developer';
     location = 'Pittsburgh and Philadelphia, PA';

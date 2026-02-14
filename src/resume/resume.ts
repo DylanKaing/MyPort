@@ -6,8 +6,9 @@ import { NgxExtendedPdfViewerModule } from 'ngx-extended-pdf-viewer';
     selector: 'resume',
     templateUrl: './resume.html',
     styleUrls: ['./resume.css'],
+    standalone: true,
     imports: [CommonModule, NgxExtendedPdfViewerModule]
 })
-export class resumeComponent{
+export class ResumeComponent{
     
 }
