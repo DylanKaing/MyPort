@@ -1,0 +1,20 @@
+<nav class = "navbar">
+    <div class = "nav-container">
+        <h1 class = "logo">Dylan Kaing</h1>
+        <ul class = "nav-links">
+            <li><a href = "#about">About</a></li>
+            <li><a href = "#education">Education</a></li>
+            <li><a href = "#projects">Projects</a></li>
+            <li><a href="#resume" style="color:black"><u>Resume</u></a></li>
+        </ul>
+    </div>
+</nav>
+
+<section class="resume-section" id="resume">
+    <div class="resume-container">
+        <h2>Resume</h2>
+        <ngx-extended-pdf-viewer [src]="'assets/DylanKaing2026Resume.pdf'" 
+                    style="width: 100%; height: 800px;">
+        </ngx-extended-pdf-viewer>
+    </div>
+</section>

@@ -5,6 +5,7 @@ import { CommonModule } from '@angular/common';
     selector: 'about',
     templateUrl: './about.html',
     styleUrls: ['./about.css'],
+    standalone: true,
     imports: [CommonModule]
 })
 export class aboutComponent{
@@ -14,9 +15,9 @@ export class aboutComponent{
 
     aboutText = `Welcome to my portfolio! Here you can find various things from skills, projects, transcript and even my resume.`;
 
-    bioText = `bioText placeholder`;
+    bioText = ``;
 
-    specialtiesText = `specialtiesText placeholder`;
+    specialtiesText = ``;
 
     contactLinks = [
         { label: 'Contact Me', href: 'https://mail.google.com/mail/?view=cm&fs=1&to=dkaing484@gmail.com'},
