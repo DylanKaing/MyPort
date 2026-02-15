@@ -6,7 +6,7 @@ import { AboutComponent } from '../about/about';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, AboutComponent, RouterModule],
+  imports: [RouterOutlet, RouterModule],
   templateUrl: './app.html',
   styleUrl: './app.css',
 })
