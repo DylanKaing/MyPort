@@ -86,8 +86,43 @@ body {
 
 .resume-viewer {
   justify-content: center;
-  width: 75%; 
+  width: 80%; 
   height: 650px; 
   border: none; 
   border-radius: 12px;
+}
+
+.resume-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.resume-container h2 {
+  margin: 0;
+}
+
+.download-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.25rem 1rem;
+  background-color: #696767;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.download-btn:hover {
+  background-color: #3c3c3c;
+  transform: translateY(-2px);
+}
+
+.download-btn svg {
+  width: 15px;
+  height: 15px;
 }
