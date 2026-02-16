@@ -13,8 +13,9 @@
 <section class="resume-section" id="resume">
     <div class="resume-container">
         <h2>Resume</h2>
-        <ngx-extended-pdf-viewer [src]="'assets/DylanKaing2026Resume.pdf'" 
-                    style="width: 100%; height: 800px;">
-        </ngx-extended-pdf-viewer>
+        <div class = "resume-viewer-wrapper">
+            <iframe [src]="pdfUrl" class="resume-viewer">
+            </iframe>
+        </div>
     </div>
 </section>
