@@ -16,7 +16,7 @@ export class AboutComponent{
 
     aboutText = `Welcome to my portfolio! Here you can find various things from skills, projects, transcript and even my resume.`;
 
-    bioText = ``;
+    bioText = `I'm a Computer Science graduate from the University of Pittsburgh, currently looking learn and improve my skills as a developer. I'm most comfortable working with Java, but I'm always eager to explore new technologies and expand my expertise across the stack.`;
 
     specialtiesText = ``;
 
