@@ -36,7 +36,7 @@ export class ProjectsComponent{
         },
         {
             id: 4,
-            title: 'CS Job Finder',
+            title: 'Brainstorming',
             description: 'In progress',
             tags: [],
             github: ''
