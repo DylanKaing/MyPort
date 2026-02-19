@@ -36,10 +36,10 @@ export class ProjectsComponent{
         },
         {
             id: 4,
-            title: 'Brainstorming',
-            description: 'In progress',
-            tags: [],
-            github: ''
+            title: 'Note App',
+            description: 'In progress 2/19',
+            tags: ['Java','SpringBoot','Angular'],
+            github: 'https://github.com/DylanKaing/NoteApp'
         }
         
     ]
